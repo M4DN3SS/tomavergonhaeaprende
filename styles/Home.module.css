@@ -1,116 +1,645 @@
-.container {
-  padding: 0 2rem;
+.wrapper {
+  max-width: 1360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.ctaButton {
+  text-decoration: none;
+  margin-top: 40px;
+  background-color: rgba(56,152,236,0);
+  background-image: -webkit-gradient(linear,left top,right top,from(#8f53d3),color-stop(55%,#d34477),to(#e83f5b));
+  background-image: linear-gradient(90deg,#8f53d3,#d34477 55%,#e83f5b);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
+
+.ctaButton {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+.ctaButton {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .ctaButton {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.card {
   display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 255,255,255, 0.10 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.primeira {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #121214;
+  background: linear-gradient(0deg, #121214 1%, #303035 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.primeira .background {
+  width: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0.3;
+}
+
+.primeira > div {
+  width: 100%;
+  height: 100vh;
+  padding: 0 16px;
+  display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  backdrop-filter: blur( 6px );
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
+.primeira h1 {
   font-size: 4rem;
+  margin-top: 64px;
+  color: #FF512F;
 }
 
-.title,
-.description {
+.primeira span h1 {
+  margin-bottom: 16px;
+}
+
+.primeira button {
+  padding: 16px 32px;
+  margin-top: 64px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background: #8ccbff;
+  box-shadow: 0 2px 10px 2px rgb(141,204,254, 0.64);
+}
+
+.primeira img {
+  width: 18px;
+  position: absolute;
+  bottom: 32px;
+  z-index: 2;
+}
+
+
+.primeira .bg {
+  width: 100%;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121214;
+  color: #fff;
+}
+
+#introduction img {
+  height: 200px;
+}
+
+#introduction > div > div {
+  display:  flex;
+  align-items: center;
+  margin-top: 48px;
+}
+
+#introduction > div > div > div {
+  margin-right: 48px;
+}
+
+#introduction p {
+  margin-top: 24px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+#introduction strong {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+#introduction .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  margin-bottom: 48px;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+#introduction .first img {
+  height:  360px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+#introduction .first strong {
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
-.grid {
+#introduction .first p {
+  margin-bottom: 24px;
+}
+
+#sobre {
+  background-color: #121214;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#sobre > div {
+  position: relative;
+}
+
+#sobre > div > span {
+  z-index: 2;
+  padding-right:  40%;
+  background-color: rgba(18, 18, 20, 0.4);
+}
+
+#sobre > div > img {
+  height: calc(100% - 162px);
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+#sobre h1 {
+  margin-bottom: 40px;
+  margin-top: 80px;
+  color: #FF512F;
+} 
+
+#sobre span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sobre p {
+  margin-bottom: 16px;
+}
+
+#sobre .bts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px
+}
+
+#sobre button {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  font-weight: 600;
+  background-color: #f09819;
+  color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  padding: 8px 16px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
+
+#sobre button img {
+  margin-right: 16px;
+}
+
+#curse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121214;
+  color: #fff;
+}
+
+#curse span {
+  display: flex;
+  gap: 24px;
+}
+
+#curse h3 {
+  font-size: 2.125rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: lightgray;
+}
+
+#curse h1 {
+  margin-bottom: 32px;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #FF512F;
+}
+
+#curse p {
+  margin-bottom: 16px;
+}
+
+#curse > div > span > div {
+  width: 50%;
+}
+
+#curse .cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap:  24px;
+}
+
+#curse .card {
+  padding: 24px;
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+}
+
+#curse .card p {
+  color: #B3ADB1;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+#curse .card .name {
+  color: #fff;
+  font-weight: 600;
+}
+
+#curse .card span {
+  display: flex;
+  align-items: center;
+}
+
+
+#testimony {
+  background-color: #121214;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimony > div {
+  align-items: center;
+  color: #fff;
+}
+
+#testimony > div > span {
+  display: flex;
+}
+
+#testimony .card {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+#testimony h1 {
+  flex: 1;
+  width: 50%;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #FF512F;
+}
+
+#testimony .cards {
+  width: 50%;
+}
+
+#testimony .card p {
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+#testimony .card .name {
+  color: #B3ADB1;
+  font-weight: 600;
+}
+
+#testimony .card span {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#testimony .card img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+#warranty {
+  background-color: #121214;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#warranty img {
+  height: 280px;
+}
+
+#warranty > div > div {
+  display:  flex;
+  align-items: center ;
+}
+
+#warranty > div > div > div {
+  margin-left: 48px;
+}
+
+#warranty p {
+  margin-top: 24px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+#warranty strong {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+#price {
+  background: rgba(18,18,20,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#price > div {
+  color: #fff;
+}
+
+#price > div > span {
+  display: flex;
+  flex-direction: column;
+}
+
+#price h1 {
+  flex: 1;
+  font-size: 4rem;
+  line-height: 4.3125rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #FF512F;
+}
+
+
+#price img {
+  width: 24px;
+  margin-right: 14px;
+}
+
+#price .card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 255,255,255, 0.15 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  gap: 14px;
+ 
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+#price .card span {
+  display: flex;
+  font-weight: 600;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+#price .list {
+  display: flex;
+  justify-content: space-between;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+#price .list .left {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+#price .list .left div {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+
+#price .list .left span {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+#price .list .left strong {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+#price .list .left p {
+  font-size: 1.375rem;
+  line-height: 3rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#price a {
+  text-decoration: none;
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  #curse > div > span {
     flex-direction: column;
+    text-align: center;
+  }
+
+  #curse > div > span > div {
+    width: 100%;
+  }
+
+  #testimony > div > span {
+    flex-direction: column;
+  }
+
+  #testimony h1 {
+    width: 100%;
+  }
+
+  #testimony .cards {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+
+  #warranty > div > div {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #warranty img {
+    width: 100%;
+  }
+
+  #warranty > div > div > div {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  #sobre h1 {
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+    text-align: center;
+  }
+
+  #sobre span {
+    text-align: center;
+  }
+
+  #sobre img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) { 
+  .wrapper {
+    padding: 80px 40px;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  #introduction img {
+    width: 100%;
+  }
+
+  #introduction > div > div  {
+    flex-direction: column;
+  }
+
+  #introduction > div > div > div {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #introduction p {
+    margin: 24px 0;
+  }
+
+  #curse h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+  }
+
+  #curse h3 {
+    text-align: center;
+    font-size: 1.15em;
+  }
+
+  #warranty {
+    text-align: center;
+  }
+
+  #price .list {
+    flex-direction: column;
+   }
+   
+   #price .list .left {
+    text-align: center;
+    margin-top: 40px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 40px 20px;
+  }
+
+  .primeira h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  #curse h1, #testimony h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+  }
+
+  #curse h3 {
+    text-align: center;
+    font-size: 1.15em;
+  }
+
+  #sobre h1 {
+    font-size: 1.625rem;
+  }
+
+  #price h1 {
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .primeira h1 {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+
+  .primeira h2 {
+    font-size: 0.9rem;
   }
 }
